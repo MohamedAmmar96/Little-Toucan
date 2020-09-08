@@ -1,0 +1,346 @@
+/**************** Extra Small Screens From 501px to 767px ****************/
+
+@media (max-width:767px) {
+    .header .logo {
+        width: 150px;
+    }
+    .header .menu-link {
+        font-size: 28px;
+        width: 50px;
+        height: 40px;
+        line-height: 48px;
+    }
+    .user-options .page-language {
+        display: none;
+    }
+    .terms .terms-content .search-link,
+    .terms .terms-content .config-link,
+    .terms .terms-content .shop-link {
+        font-size: 28px;
+    }
+    .terms .terms-content:nth-child(1),
+    .terms .terms-content:nth-child(2) {
+        margin-left: 25px;
+    }
+    /* Start Side Menu */
+    .side-menu {
+        width: 260px;
+    }
+    .side-menu .close {
+        font-size: 26px;
+    }
+    .side-menu-list .menu-li .sidemenu-link,
+    .side-menu .user-config .account,
+    .side-menu .language {
+        font-size: 16px;
+    }
+    .side-menu .user-config .config-box .getin .getin-link,
+    .side-menu .page-language .lang .lang-page {
+        font-size: 13px;
+    }
+    /* Start Of Search Bar */
+    .search-bar .search-input {
+        font-size: 17px;
+    }
+    .search-bar .search-input::placeholder {
+        font-size: 16px;
+    }
+    .search-bar .close-btn,
+    .search-bar .search-btn {
+        font-size: 24px;
+    }
+    .search-bar .close-btn {
+        margin-right: 10px;
+    }
+    .search-bar .search-btn {
+        margin-left: 10px;
+        margin-top: 7px;
+    }
+    .terms-content .user-config {
+        left: 22px;
+    }
+    .banner {
+        margin-bottom: 30px;
+    }
+    .products {
+        margin-bottom: 40px;
+    }
+    .products .products-title {
+        margin-bottom: 20px;
+    }
+    .products .owl-carousel .owl-dots {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+    }
+    .products .owl-carousel button.owl-dot {
+        width: 10px;
+        height: 10px;
+        margin: 4px;
+        outline: none;
+    }
+    .products .owl-carousel button.owl-dot span {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .products .owl-carousel .owl-dots .owl-dot:hover span {
+        background-color: #da9eab;
+    }
+    .products .owl-carousel .owl-dots .owl-dot.active span {
+        background-color: #da9eab;
+    }
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .footer .footer-top {
+        margin-bottom: 40px;
+    }
+    .footer-top .one .footer-heading {
+        margin-bottom: 10px;
+        margin-right: 55px;
+    }
+    .footer-top .one .info-list .li {
+        margin-right: 65px;
+    }
+    .footer-top .one .footer-heading::after {
+        content: '\e874';
+        font-family: 'Linearicons-Free';
+        position: absolute;
+        left: 70px;
+    }
+    .footer-top .two .footer-heading {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .footer-col .newsletter {
+        width: calc(100% - 20%);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-bottom .bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-bottom .copyrights {
+        margin-bottom: 10px;
+    }
+    .footer-bottom .copyrights .reserved {
+        margin-left: 2px;
+        margin-bottom: 5px;
+    }
+}
+
+
+/**************** Extra Small Screens From 0 to 500px ****************/
+
+@media (max-width:500px) {
+    .header .logo {
+        width: 120px;
+    }
+    .header .menu-link {
+        font-size: 28px;
+        width: 45px;
+        height: 35px;
+        line-height: 42px;
+    }
+    .terms .terms-content .search-link,
+    .terms .terms-content .config-link,
+    .terms .terms-content .shop-link {
+        font-size: 25px;
+    }
+    .terms .terms-content:nth-child(1),
+    .terms .terms-content:nth-child(2) {
+        margin-left: 15px;
+    }
+    .footer-top .one .footer-heading {
+        margin-right: 15px;
+    }
+    .footer-top .one .info-list .li {
+        margin-right: 25px;
+    }
+    .footer-top .one .footer-heading::after {
+        left: 30px;
+    }
+    .footer-col .newsletter {
+        width: calc(100% - 30px);
+    }
+}
+
+
+/*********************  Small Screens *********************/
+
+@media (min-width:768px) and (max-width:991px) {
+    .header .logo {
+        width: 170px;
+    }
+    .header .menu-link {
+        font-size: 28px;
+        width: 50px;
+        height: 40px;
+        line-height: 48px;
+    }
+    .user-options .page-language {
+        display: none;
+    }
+    .terms .terms-content .search-link,
+    .terms .terms-content .config-link,
+    .terms .terms-content .shop-link {
+        font-size: 28px;
+    }
+    .terms .terms-content:nth-child(1),
+    .terms .terms-content:nth-child(2) {
+        margin-left: 25px;
+    }
+    /* Start Side Menu */
+    .side-menu {
+        width: 300px;
+    }
+    .side-menu .close {
+        font-size: 26px;
+    }
+    .side-menu-list .menu-li .sidemenu-link,
+    .side-menu .user-config .account,
+    .side-menu .language {
+        font-size: 16px;
+    }
+    .side-menu .user-config .config-box .getin .getin-link,
+    .side-menu .page-language .lang .lang-page {
+        font-size: 13px;
+    }
+    /* Start Of Search Bar */
+    .search-bar .search-input {
+        font-size: 17px;
+    }
+    .search-bar .search-input::placeholder {
+        font-size: 16px;
+    }
+    .search-bar .close-btn,
+    .search-bar .search-btn {
+        font-size: 26px;
+    }
+    .search-bar .close-btn {
+        margin-right: 10px;
+    }
+    .search-bar .search-btn {
+        margin-left: 10px;
+        margin-top: 7px;
+    }
+    .terms-content .user-config {
+        left: 15px;
+    }
+    .banner {
+        margin-bottom: 30px;
+    }
+    .products {
+        margin-bottom: 40px;
+    }
+    .products .products-title {
+        margin-bottom: 20px;
+    }
+    .products .owl-carousel .owl-dots {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+    }
+    .products .owl-carousel button.owl-dot {
+        width: 10px;
+        height: 10px;
+        margin: 4px;
+        outline: none;
+    }
+    .products .owl-carousel button.owl-dot span {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .products .owl-carousel .owl-dots .owl-dot:hover span {
+        background-color: #da9eab;
+    }
+    .products .owl-carousel .owl-dots .owl-dot.active span {
+        background-color: #da9eab;
+    }
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .footer .footer-top {
+        margin-bottom: 40px;
+    }
+    .footer-top .one .footer-heading {
+        margin-bottom: 10px;
+        margin-right: 55px;
+    }
+    .footer-top .one .info-list .li {
+        margin-right: 65px;
+    }
+    .footer-top .one .footer-heading::after {
+        content: '\e874';
+        font-family: 'Linearicons-Free';
+        position: absolute;
+        left: 70px;
+    }
+    .footer-top .two .footer-heading {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .footer-col .newsletter {
+        width: calc(100% - 20%);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-bottom .bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-bottom .copyrights {
+        margin-bottom: 10px;
+    }
+    .footer-bottom .copyrights .reserved {
+        margin-left: 2px;
+        margin-bottom: 5px;
+    }
+}
+
+
+/*********************  Medium Screens ********************/
+
+@media (min-width:992px)and (max-width:1199px) {
+    .products {
+        margin-bottom: 70px;
+    }
+    .products .owl-carousel .owl-dots {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+    }
+    .products .owl-carousel button.owl-dot {
+        width: 10px;
+        height: 10px;
+        margin: 4px;
+        outline: none;
+    }
+    .products .owl-carousel button.owl-dot span {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .products .owl-carousel .owl-dots .owl-dot:hover span {
+        background-color: #da9eab;
+    }
+    .products .owl-carousel .owl-dots .owl-dot.active span {
+        background-color: #da9eab;
+    }
+    .footer .footer-top {
+        margin-bottom: 60px;
+    }
+}
+
+
+/*********************  Large Screens *********************/
+
+@media (min-width:1200px) {}
