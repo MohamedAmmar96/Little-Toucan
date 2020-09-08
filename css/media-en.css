@@ -139,6 +139,12 @@
 /**************** Extra Small Screens From 0 to 500px ****************/
 
 @media (max-width:500px) {
+    body {
+        background-color: #dfebe8;
+    }
+    .header {
+        background-color: transparent;
+    }
     .header .logo {
         width: 120px;
     }
@@ -155,6 +161,33 @@
     .terms .terms-content:nth-child(1) {
         margin-right: 25px;
     }
+    .banner {
+        height: 300px;
+    }
+    .banner .clouds {
+        position: fixed;
+        top: 25%;
+    }
+    .banner .birds {
+        position: absolute;
+        width: 330px;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .banner .birds .birds-img {
+        width: 100%;
+    }
+    .banner .right-trees,
+    .banner .left-trees,
+    .banner .grass {
+        display: none;
+    }
+    .footer {
+        position: relative;
+        padding-bottom: 0;
+        background-color: transparent;
+    }
     .footer-top .one .footer-heading {
         margin-left: 15px;
     }
@@ -166,6 +199,29 @@
     }
     .footer-col .newsletter {
         width: calc(100% - 30px);
+    }
+    .nature {
+        position: relative;
+        height: 100px;
+    }
+    .footer .right-trees {
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+        width: 200px;
+    }
+    .footer .right-trees .right-trees-img {
+        width: 100%;
+    }
+    .footer .grass {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: 999;
+    }
+    .footer .grass .grass-img {
+        max-width: 100%;
     }
 }
 
@@ -304,6 +360,9 @@
         margin-right: 2px;
         margin-bottom: 5px;
     }
+    .nature {
+        display: none;
+    }
 }
 
 
@@ -339,9 +398,16 @@
     .footer .footer-top {
         margin-bottom: 60px;
     }
+    .nature {
+        display: none;
+    }
 }
 
 
 /*********************  Large Screens *********************/
 
-@media (min-width:1200px) {}
+@media (min-width:1200px) {
+    .nature {
+        display: none;
+    }
+}

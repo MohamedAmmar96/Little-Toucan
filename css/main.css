@@ -535,61 +535,81 @@ body {
     width: 100%;
     height: 700px;
     background-color: #dfebe8;
-    text-align: center;
+    overflow: hidden;
 }
 
 .banner .clouds {
     position: absolute;
     top: 77px;
-    left: 50%;
-    /* display: inline-block;
-    margin-top: 77px; */
-    transform: translateX(-50%);
-    animation: clouds 4s linear infinite;
+    text-align: center;
+    animation: clouds 7s linear infinite;
 }
 
 @keyframes clouds {
     0% {
-        left: 0;
-        transform: translateX(-100%);
+        left: -100%;
+        text-align: left;
     }
     25% {
-        transform: translateX(-50%);
+        left: -50%;
+        text-align: left;
     }
     50% {
-        transform: translateX(0%);
+        left: 0%;
+        text-align: left;
     }
     75% {
-        transform: translateX(50%);
+        left: 50%;
+        text-align: left;
     }
     100% {
-        transform: translateX(100%);
+        left: 100%;
+        text-align: left;
     }
 }
 
 .banner .birds {
     position: absolute;
     top: 222px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.banner .birds .birds-img {
+    max-width: 100%;
 }
 
 .banner .right-trees {
     position: absolute;
     bottom: 20px;
     right: 25px;
+    width: 400px;
+    text-align: right;
+}
+
+.banner .right-trees .right-trees-img {
+    max-width: 100%;
 }
 
 .banner .left-trees {
     position: absolute;
     bottom: 20px;
     left: 25px;
+    width: 400px;
+    text-align: left;
+}
+
+.banner .left-trees .left-trees-img {
+    max-width: 100%;
 }
 
 .banner .grass {
     position: absolute;
     bottom: 0;
-    right: 0;
+    width: 100%;
+}
+
+.banner .grass .grass-img {
     width: 100%;
 }
 

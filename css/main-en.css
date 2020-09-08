@@ -530,16 +530,87 @@ body {
 /***************************** Banner Section Start ***************************/
 
 .banner {
+    position: relative;
     margin-bottom: 80px;
     width: 100%;
+    height: 700px;
+    background-color: #dfebe8;
+    overflow: hidden;
 }
 
-.banner .banner-box {
+.banner .clouds {
+    position: absolute;
+    top: 77px;
+    text-align: center;
+    animation: clouds 7s linear infinite;
+}
+
+@keyframes clouds {
+    0% {
+        right: -100%;
+        text-align: right;
+    }
+    25% {
+        right: -50%;
+        text-align: right;
+    }
+    50% {
+        right: 0%;
+        text-align: right;
+    }
+    75% {
+        right: 50%;
+        text-align: right;
+    }
+    100% {
+        right: 100%;
+        text-align: right;
+    }
+}
+
+.banner .birds {
+    position: absolute;
+    top: 222px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner .birds .birds-img {
+    max-width: 100%;
+}
+
+.banner .right-trees {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    width: 400px;
+    text-align: right;
+}
+
+.banner .right-trees .right-trees-img {
+    max-width: 100%;
+}
+
+.banner .left-trees {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    width: 400px;
+    text-align: left;
+}
+
+.banner .left-trees .left-trees-img {
+    max-width: 100%;
+}
+
+.banner .grass {
+    position: absolute;
+    bottom: 0;
     width: 100%;
 }
 
-.banner .banner-box .banner-image {
-    max-width: 100%;
+.banner .grass .grass-img {
+    width: 100%;
 }
 
 
