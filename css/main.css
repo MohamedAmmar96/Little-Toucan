@@ -116,6 +116,38 @@ body {
     color: #da9eab;
 }
 
+.dept-list {
+    display: none;
+    margin-bottom: 0;
+}
+
+.dept-list .dept-li {
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.dept-list .dept-li:last-child {
+    margin-bottom: 0;
+}
+
+.dept-list .dept-li .dept-list-link {
+    color: #000;
+    text-decoration: none;
+    font-family: "medium";
+    font-size: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.dept-list .dept-li .dept-list-link:hover {
+    color: #da9eab;
+}
+
+.side-menu-list .menu-li .dept-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .side-menu .user-config .account {
     display: flex;
     flex-direction: row;
@@ -127,6 +159,7 @@ body {
     transition: all 0.4s ease-in-out;
 }
 
+.side-menu-list .menu-li .dept-link::after,
 .side-menu .user-config .account::after,
 .side-menu .language::after {
     content: '\e874';
@@ -497,16 +530,67 @@ body {
 /***************************** Banner Section Start ***************************/
 
 .banner {
+    position: relative;
     margin-bottom: 80px;
     width: 100%;
+    height: 700px;
+    background-color: #dfebe8;
+    text-align: center;
 }
 
-.banner .banner-box {
+.banner .clouds {
+    position: absolute;
+    top: 77px;
+    left: 50%;
+    /* display: inline-block;
+    margin-top: 77px; */
+    transform: translateX(-50%);
+    animation: clouds 4s linear infinite;
+}
+
+@keyframes clouds {
+    0% {
+        left: 0;
+        transform: translateX(-100%);
+    }
+    25% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    75% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.banner .birds {
+    position: absolute;
+    top: 222px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner .right-trees {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+}
+
+.banner .left-trees {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+}
+
+.banner .grass {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 100%;
-}
-
-.banner .banner-box .banner-image {
-    max-width: 100%;
 }
 
 
@@ -591,15 +675,13 @@ body {
 
 .products .owl-carousel .owl-nav .owl-prev {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 35%;
     right: -50px;
 }
 
 .products .owl-carousel .owl-nav .owl-next {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 35%;
     left: -50px;
 }
 

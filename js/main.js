@@ -91,7 +91,10 @@ $(document).ready(function() {
 
 
 
-    //This is to Open user-config & language Menus in Small Screens Side Menu
+    //This is to Open user-config, language & Products Menus in Small Screens Side Menu
+    $(".dept-link").click(function() {
+        $(".side-menu .dept-list").slideToggle(600);
+    });
     $(".account").click(function() {
         $(".side-menu .config-box").slideToggle(600);
     });

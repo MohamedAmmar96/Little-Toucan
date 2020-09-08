@@ -13,13 +13,14 @@
     .user-options .page-language {
         display: none;
     }
+    .terms .config-terms {
+        display: none;
+    }
     .terms .terms-content .search-link,
-    .terms .terms-content .config-link,
     .terms .terms-content .shop-link {
         font-size: 28px;
     }
-    .terms .terms-content:nth-child(1),
-    .terms .terms-content:nth-child(2) {
+    .terms .terms-content:nth-child(1) {
         margin-right: 25px;
     }
     /* Start Side Menu */
@@ -34,6 +35,7 @@
     .side-menu .language {
         font-size: 16px;
     }
+    .dept-list .dept-li .dept-list-link,
     .side-menu .user-config .config-box .getin .getin-link,
     .side-menu .page-language .lang .lang-page {
         font-size: 13px;
@@ -147,13 +149,11 @@
         line-height: 42px;
     }
     .terms .terms-content .search-link,
-    .terms .terms-content .config-link,
     .terms .terms-content .shop-link {
         font-size: 25px;
     }
-    .terms .terms-content:nth-child(1),
-    .terms .terms-content:nth-child(2) {
-        margin-right: 15px;
+    .terms .terms-content:nth-child(1) {
+        margin-right: 25px;
     }
     .footer-top .one .footer-heading {
         margin-left: 15px;
@@ -206,6 +206,7 @@
     .side-menu .language {
         font-size: 16px;
     }
+    .dept-list .dept-li .dept-list-link,
     .side-menu .user-config .config-box .getin .getin-link,
     .side-menu .page-language .lang .lang-page {
         font-size: 13px;

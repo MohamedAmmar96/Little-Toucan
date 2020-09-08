@@ -116,6 +116,38 @@ body {
     color: #da9eab;
 }
 
+.dept-list {
+    display: none;
+    margin-bottom: 0;
+}
+
+.dept-list .dept-li {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.dept-list .dept-li:last-child {
+    margin-bottom: 0;
+}
+
+.dept-list .dept-li .dept-list-link {
+    color: #000;
+    text-decoration: none;
+    font-family: "medium";
+    font-size: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.dept-list .dept-li .dept-list-link:hover {
+    color: #da9eab;
+}
+
+.side-menu-list .menu-li .dept-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .side-menu .user-config .account {
     display: flex;
     flex-direction: row;
@@ -127,6 +159,7 @@ body {
     transition: all 0.4s ease-in-out;
 }
 
+.side-menu-list .menu-li .dept-link::after,
 .side-menu .user-config .account::after,
 .side-menu .language::after {
     content: '\e874';
@@ -592,15 +625,13 @@ body {
 
 .products .owl-carousel .owl-nav .owl-prev {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 35%;
     right: -50px;
 }
 
 .products .owl-carousel .owl-nav .owl-next {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 35%;
     left: -50px;
 }
 
