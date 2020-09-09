@@ -154,4 +154,5 @@ $(document).ready(function() {
         $(".config-box .get-two").toggleClass("signup");
     });
 
+
 });

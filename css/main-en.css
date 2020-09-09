@@ -336,6 +336,10 @@ body {
     left: 0;
     width: 100%;
     background-color: #dfebe8;
+    background-image: url(../images/logo/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
     z-index: 99999;
     display: none;
 }
@@ -542,7 +546,34 @@ body {
     position: absolute;
     top: 77px;
     text-align: center;
-    animation: clouds 7s linear infinite;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.banner .clouds .clouds1,
+.banner .clouds .clouds2,
+.banner .clouds .clouds3 {
+    width: auto;
+    position: absolute;
+}
+
+.banner .clouds .clouds1 {
+    animation: clouds 9s linear infinite;
+}
+
+.banner .clouds .clouds2 {
+    animation: clouds 14s linear infinite;
+}
+
+.banner .clouds .clouds3 {
+    animation: clouds 20s linear infinite;
+}
+
+.banner .clouds1 .clouds-img,
+.banner .clouds2 .clouds-img,
+.banner .clouds3 .clouds-img {
+    width: auto;
 }
 
 @keyframes clouds {
@@ -604,13 +635,11 @@ body {
 }
 
 .banner .grass {
+    background: url(../images/bannar/cut-grass-600.png) repeat-x;
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-
-.banner .grass .grass-img {
-    width: 100%;
+    height: 68px;
 }
 
 

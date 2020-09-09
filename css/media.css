@@ -62,7 +62,52 @@
         left: 22px;
     }
     .banner {
-        margin-bottom: 30px;
+        height: 500px;
+    }
+    .banner .clouds {
+        position: absolute;
+        /* top: 25%; */
+    }
+    .banner .clouds .clouds1 {
+        animation: clouds 8s linear infinite;
+    }
+    .banner .clouds .clouds2 {
+        animation: clouds 12s linear infinite;
+    }
+    .banner .clouds .clouds3 {
+        display: none;
+    }
+    .banner .clouds {
+        position: absolute;
+        width: 800px;
+        /* top: 25%; */
+    }
+    .banner .clouds .clouds1,
+    .banner .clouds .clouds2 {
+        width: 100%;
+    }
+    .banner .clouds1 .clouds-img,
+    .banner .clouds2 .clouds-img {
+        width: 100%;
+    }
+    .banner .birds {
+        position: absolute;
+        width: 400px;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .banner .birds .birds-img {
+        width: 100%;
+    }
+    .banner .right-trees {
+        width: 250px;
+        bottom: 30px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .banner .left-trees {
+        display: none;
     }
     .products {
         margin-bottom: 40px;
@@ -133,21 +178,12 @@
         margin-left: 2px;
         margin-bottom: 5px;
     }
-    .nature {
-        display: none;
-    }
 }
 
 
 /**************** Extra Small Screens From 0 to 500px ****************/
 
 @media (max-width:500px) {
-    body {
-        background-color: #dfebe8;
-    }
-    .header {
-        background-color: transparent;
-    }
     .header .logo {
         width: 120px;
     }
@@ -165,31 +201,43 @@
         margin-left: 25px;
     }
     .banner {
-        height: 300px;
+        height: 500px;
     }
     .banner .clouds {
-        position: fixed;
-        top: 25%;
+        position: absolute;
+        width: 650px;
+        /* top: 25%; */
+    }
+    .banner .clouds .clouds1,
+    .banner .clouds .clouds2 {
+        width: 100%;
+    }
+    .banner .clouds1 .clouds-img,
+    .banner .clouds2 .clouds-img {
+        width: 100%;
     }
     .banner .birds {
         position: absolute;
         width: 330px;
-        top: 40%;
+        top: 35%;
         left: 50%;
         transform: translateX(-50%);
     }
     .banner .birds .birds-img {
         width: 100%;
     }
-    .banner .right-trees,
-    .banner .left-trees,
-    .banner .grass {
+    .banner .right-trees {
+        width: 250px;
+        bottom: 30px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .banner .left-trees {
         display: none;
     }
     .footer {
         position: relative;
         padding-bottom: 0;
-        background-color: transparent;
     }
     .footer-top .one .footer-heading {
         margin-right: 15px;
@@ -202,30 +250,6 @@
     }
     .footer-col .newsletter {
         width: calc(100% - 30px);
-    }
-    .nature {
-        display: block;
-        position: relative;
-        height: 100px;
-    }
-    .footer .right-trees {
-        position: absolute;
-        bottom: 0;
-        right: 50%;
-        transform: translateX(50%);
-        width: 200px;
-    }
-    .footer .right-trees .right-trees-img {
-        width: 100%;
-    }
-    .footer .grass {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        z-index: 999;
-    }
-    .footer .grass .grass-img {
-        max-width: 100%;
     }
 }
 
@@ -261,6 +285,9 @@
     .side-menu .close {
         font-size: 26px;
     }
+    .side-menu .user-config {
+        display: none;
+    }
     .side-menu-list .menu-li .sidemenu-link,
     .side-menu .user-config .account,
     .side-menu .language {
@@ -294,6 +321,32 @@
     }
     .banner {
         margin-bottom: 30px;
+    }
+    .banner .clouds {
+        width: 800px;
+        position: absolute;
+        /* top: 25%; */
+    }
+    .banner .clouds .clouds3 {
+        display: none;
+    }
+    .banner .birds {
+        position: absolute;
+        width: 550px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .banner .birds .birds-img {
+        width: 100%;
+    }
+    .banner .right-trees {
+        width: 270px;
+        bottom: 30px;
+    }
+    .banner .left-trees {
+        width: 270px;
+        bottom: 30px;
     }
     .products {
         margin-bottom: 40px;
@@ -364,15 +417,23 @@
         margin-left: 2px;
         margin-bottom: 5px;
     }
-    .nature {
-        display: none;
-    }
 }
 
 
 /*********************  Medium Screens ********************/
 
 @media (min-width:992px)and (max-width:1199px) {
+    .side-menu .user-config {
+        display: none;
+    }
+    .banner .birds {
+        width: 700px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .banner .clouds .clouds3 {
+        display: none;
+    }
     .products {
         margin-bottom: 70px;
     }
@@ -402,16 +463,33 @@
     .footer .footer-top {
         margin-bottom: 60px;
     }
-    .nature {
-        display: none;
-    }
 }
 
 
 /*********************  Large Screens *********************/
 
-@media (min-width:1200px) {
-    .nature {
+@media (min-width:1200px) and (max-width:1399px) {
+    .side-menu .user-config {
         display: none;
+    }
+}
+
+@media (min-width:1400px) {
+    .side-menu .user-config {
+        display: none;
+    }
+    .banner .clouds .clouds1 {
+        animation: clouds 12s linear infinite;
+    }
+    .banner .clouds .clouds2 {
+        animation: clouds 17s linear infinite;
+    }
+    .banner .clouds .clouds3 {
+        animation: clouds 25s linear infinite;
+    }
+    .terms .terms-content .search-link,
+    .terms .terms-content .config-link,
+    .terms .terms-content .shop-link {
+        font-size: 24px;
     }
 }
