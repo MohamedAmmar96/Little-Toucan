@@ -336,10 +336,6 @@ body {
     right: 0;
     width: 100%;
     background-color: #dfebe8;
-    background-image: url(../images/logo/logo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100px;
     z-index: 99999;
     display: none;
 }
@@ -559,15 +555,15 @@ body {
 }
 
 .banner .clouds .clouds1 {
-    animation: clouds 9s linear infinite;
+    animation: clouds 15s linear infinite;
 }
 
 .banner .clouds .clouds2 {
-    animation: clouds 14s linear infinite;
+    animation: clouds 19s linear infinite;
 }
 
 .banner .clouds .clouds3 {
-    animation: clouds 20s linear infinite;
+    animation: clouds 25s linear infinite;
 }
 
 .banner .clouds1 .clouds-img,

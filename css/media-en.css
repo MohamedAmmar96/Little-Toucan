@@ -61,6 +61,12 @@
     .terms-content .user-config {
         right: 22px;
     }
+    .shop-link .counter {
+        width: 17px;
+        height: 17px;
+        line-height: 17px;
+        font-size: 13px;
+    }
     .banner {
         height: 500px;
     }
@@ -200,6 +206,12 @@
     .terms .terms-content:nth-child(1) {
         margin-right: 25px;
     }
+    .shop-link .counter {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        font-size: 12px;
+    }
     .banner {
         height: 500px;
     }
@@ -318,6 +330,12 @@
     }
     .terms-content .user-config {
         right: 15px;
+    }
+    .shop-link .counter {
+        width: 17px;
+        height: 17px;
+        line-height: 17px;
+        font-size: 13px;
     }
     .banner {
         margin-bottom: 30px;
@@ -478,14 +496,18 @@
     .side-menu .user-config {
         display: none;
     }
-    .banner .clouds .clouds1 {
-        animation: clouds 12s linear infinite;
+    .shop-link .counter {
+        top: -8px;
+        right: -8px;
     }
-    .banner .clouds .clouds2 {
+    .banner .clouds .clouds1 {
         animation: clouds 17s linear infinite;
     }
+    .banner .clouds .clouds2 {
+        animation: clouds 23s linear infinite;
+    }
     .banner .clouds .clouds3 {
-        animation: clouds 25s linear infinite;
+        animation: clouds 28s linear infinite;
     }
     .terms .terms-content .search-link,
     .terms .terms-content .config-link,
